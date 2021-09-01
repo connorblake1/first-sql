@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add and Entry</title>
+	<meta name="author" content="Connor Blake" >
+	<style type="text/css">
+		h1 {font-size: 36pt; font-weight: bold;text-align: center;}
+	</style>
+</head>
+<body>
+	<h1>Add Entries to Table</h1>
+	<form method="get" action="Sequences_Series.php">
+		<table>
+		<tr><td>Name of Sequence or Series</td>
+		<td><input type="text" name="addTitle"/></td></tr>
+		<tr><td>Type: Sequence OR Series</td>
+		<td><select name="addType">
+					<option value="1">Sequence</option>
+					<option value="0">Series</option>
+		</select></td></tr>
+		<tr><td>If Series: Convergent OR Divergent If Sequence: N/A</td>
+		<td><select name="addTypeType">
+					<option value="1">Convergent</option>
+					<option value="0">Divergent</option>
+					<option value="0">N/As (it's a sequence)</option>
+		</select></td></tr>
+		<tr><td>Term 1</td>
+		<td><input type="text" name="addTerm1"/></td></tr>
+		<tr><td>Term 2</td>
+		<td><input type="text" name="addTerm2"/></td></tr>
+		<tr><td>Term 3</td>
+		<td><input type="text" name="addTerm3"/></td></tr>
+		</table>
+		<input type="submit" name="command" value="Add"/>
+		<input type="submit" name="command" value="Cancel">
+	</form>
+</body>
+</html>
